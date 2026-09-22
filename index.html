@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#171717">
+  <meta name="description" content="One useful Houdini quick tip at a time.">
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="style.css">
+  <title>Houdini QT</title>
+</head>
+<body>
+  <main class="app">
+    <header>
+      <div class="eyebrow">#QT</div>
+      <h1>Houdini Quick Tip</h1>
+      <p class="sub">One useful Houdini trick. No noise.</p>
+    </header>
+
+    <section class="tip-card" aria-live="polite">
+      <div class="tag" id="category">SOPs</div>
+      <h2 id="tipTitle">Ready?</h2>
+      <p id="tipText">Tap the button for a Houdini quick tip.</p>
+      <pre id="code" hidden></pre>
+      <p class="why" id="why"></p>
+    </section>
+
+    <div class="actions">
+      <button id="newTip" type="button">✨ New tip</button>
+      <button id="copyTip" type="button" class="secondary">Copy</button>
+    </div>
+
+    <p class="status" id="status"></p>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
